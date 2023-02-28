@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "942381855741",
+    "project_id": "feed-mart",
+    "storage_bucket": "feed-mart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942381855741:android:7ef80b5123100487ca1f94",
+        "android_client_info": {
+          "package_name": "com.feedmart.User"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942381855741-42lrok5t844b5t8bqv7fh8svrisb3lnu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.feedmart.User",
+            "certificate_hash": "12ec2962e6067f35648a1eae460bdbeb2722d4ac"
+          }
+        },
+        {
+          "client_id": "942381855741-quvegm8c5h90dkkd5dr7hqbv69vd85g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbeUi4vn1qfjtP_VIcaEN86jsnIgUXCos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942381855741-quvegm8c5h90dkkd5dr7hqbv69vd85g6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942381855741:android:587a6693f946474bca1f94",
+        "android_client_info": {
+          "package_name": "com.feedmart.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942381855741-quvegm8c5h90dkkd5dr7hqbv69vd85g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbeUi4vn1qfjtP_VIcaEN86jsnIgUXCos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942381855741-quvegm8c5h90dkkd5dr7hqbv69vd85g6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942381855741:android:af5cf4d0a5afc1d4ca1f94",
+        "android_client_info": {
+          "package_name": "com.feedmart.seller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942381855741-quvegm8c5h90dkkd5dr7hqbv69vd85g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbeUi4vn1qfjtP_VIcaEN86jsnIgUXCos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942381855741-quvegm8c5h90dkkd5dr7hqbv69vd85g6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,4 @@
+storePassword=123456
+keyPassword=123456
+keyAlias=upload
+storeFile=/home/alphawizz/SurendraCollection/FeedMartCollection/FeedMart_user20Sep/FeedMart_user29/FeedMart_user/upload-keystore.jks
