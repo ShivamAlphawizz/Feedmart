@@ -620,7 +620,7 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                                               cartList[index]
                                                   .productList![0]
                                                   .prVarientList![selectedPos]
-                                                  .disPrice! + "/" + " ${cartList[index].productList![0].weight ==  "1"? cartList[index].productList![0].prVarientList![0].unittext:cartList[index].productList![0].weight }${cartList[index].productList![0].prVarientList![0].unittext}"
+                                                  .disPrice! + "/" + " ${cartList[index].productList![0].weight ==  "1"? cartList[index].productList![0].prVarientList![0].unittext:cartList[index].productList![0].weight }"
 
                                               : "",
                                           style: TextStyle(
@@ -3666,9 +3666,9 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                                       } else if (payMethod ==
                                           null ||
                                           payMethod!.isEmpty) {
-                                        msg = getTranslated(
-                                            context,
-                                            'payWarning');
+                                        // msg = getTranslated(
+                                        //     context,
+                                        //     'payWarning');
                                         var result = await Navigator.push(
                                             context,
                                             MaterialPageRoute(

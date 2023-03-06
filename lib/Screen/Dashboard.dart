@@ -543,7 +543,7 @@ class _HomePageState extends State<Dashboard> with TickerProviderStateMixin {
 
     SettingProvider settingsProvider =
     Provider.of<SettingProvider>(this.context, listen: false);
-    bool isFirstTime = await settingsProvider.getPrefrenceBool(ISFIRSTTIME);
+    //bool isFirstTime = await settingsProvider.getPrefrenceBool(ISFIRSTTIME);
     print("checking first time value ${_seen}");
     if(_seen == true){
       //startTutorialMode();
@@ -556,7 +556,7 @@ class _HomePageState extends State<Dashboard> with TickerProviderStateMixin {
 
 
   startTime() async {
-    var _duration = Duration(seconds: 1);
+    var _duration = Duration(seconds: 2);
     return Timer(_duration, checkFirstTime);
   }
 

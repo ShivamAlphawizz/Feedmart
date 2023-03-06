@@ -3135,24 +3135,25 @@ class _HomePageState extends State<HomePage>
 
   Future<void> checkFirstTime()async{
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    bool _seen = (prefs.getBool('seen') ?? false);
+    bool _seen1 = (prefs.getBool('seen1') ?? false);
 
     SettingProvider settingsProvider =
     Provider.of<SettingProvider>(this.context, listen: false);
     bool isFirstTime = await settingsProvider.getPrefrenceBool(ISFIRSTTIME);
-    print("checking first time value ${_seen}");
-    if(_seen == true){
+    print("checking first time value sdsssdss ${isFirstTime}");
+    if(_seen1 == true){
       //startTutorialMode();
     }
     else{
-      await prefs.setBool('seen', true);
+     // await prefs.setBool('seen', true);
+      await prefs.setBool('seen1', true);
       startTutorialMode();
     }
   }
 
 
   startTime() async {
-    var _duration = Duration(seconds: 1);
+    var _duration = Duration(seconds: 3);
     return Timer(_duration, checkFirstTime);
   }
 
@@ -3161,7 +3162,7 @@ class _HomePageState extends State<HomePage>
     super.initState();
     //getSetting();
 
-    Future.delayed(Duration(seconds: 2),(){
+    Future.delayed(Duration(seconds: 3),(){
       return startTime();
     });
     targetList.addAll([
@@ -4076,7 +4077,7 @@ class _HomePageState extends State<HomePage>
                   children: [
                     Padding(
                         padding: const EdgeInsets.only(right: 5.0),
-                        child: Text("AMOUNT : $CUR_CURRENCY ${items[0].remainingAmount}",style: TextStyle(color: colors.whiteTemp,fontWeight: FontWeight.bold),)
+                        child: Text("BALANCE : $CUR_CURRENCY ${items[0].remainingAmount}",style: TextStyle(color: colors.whiteTemp,fontWeight: FontWeight.bold),)
                     ),
                     InkWell(
                       onTap: ()async{
@@ -5087,7 +5088,6 @@ class _HomePageState extends State<HomePage>
                   ],
                 ),
               )
-
             // TextField(
             //    controller: controllerfield,
             //   autofocus: true,
@@ -5222,21 +5222,14 @@ class _HomePageState extends State<HomePage>
                                     overflow: TextOverflow.ellipsis,
                                     textAlign: TextAlign.start,
                                     maxLines: 1,
-
                                   ),
-
                                 ),
                               ),
-
                             ),
                           ),
-
                         ]
                     ),
-
-
                   ),
-
                 );
 
             },

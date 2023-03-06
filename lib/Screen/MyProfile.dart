@@ -875,7 +875,8 @@ class StateProfile extends State<MyProfile> with TickerProviderStateMixin {
                       color: Theme.of(context).colorScheme.fontColor,
                       fontWeight: FontWeight.bold),
                 ),
-                onPressed: () {
+                onPressed: ()async{
+                  await prefs!.setBool('seen', true);
                   SettingProvider settingProvider =
                       Provider.of<SettingProvider>(context, listen: false);
                   settingProvider.clearUserSession(context);

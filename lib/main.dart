@@ -29,7 +29,6 @@ import 'Screen/SignUp.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   await Firebase.initializeApp();
   initializedDownload();
  // FirebaseMessaging.onBackgroundMessage(myForgroundMessageHandler);

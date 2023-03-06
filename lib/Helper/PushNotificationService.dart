@@ -326,7 +326,7 @@ Future<void> generateImageNotication(
       largeIcon: FilePathAndroidBitmap(largeIconPath),
       styleInformation: bigPictureStyleInformation,
       playSound: true,
-      sound: const UriAndroidNotificationSound("assets/sms tone.mp3"),
+
      );
   var platformChannelSpecifics =
       NotificationDetails(android: androidPlatformChannelSpecifics);
